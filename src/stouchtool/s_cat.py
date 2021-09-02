@@ -10,8 +10,9 @@ from difflib import SequenceMatcher
 from typing import List
 
 import skrf as rf
-from rftools import __version__
 from scipy.special import comb
+
+from stouchtool import __version__
 
 __author__ = "Jesús Lázaro"
 __copyright__ = "Jesús Lázaro"
