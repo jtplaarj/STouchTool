@@ -8,9 +8,9 @@ STouchTool
 .. image:: https://coveralls.io/repos/github/jtplaarj/STouchTool/badge.svg?branch=master
     :target: https://coveralls.io/github/jtplaarj/STouchTool?branch=master
     :alt: Coveralls
-.. image:: https://readthedocs.org/projects/STouchTool/badge/?version=latest
-    :target: https://readthedocs.org/projects/STouchTool/
-    :alt: Docs Status
+.. image:: https://readthedocs.org/projects/stouchtool/badge/?version=latest
+    :target: https://stouchtool.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
 .. image:: https://img.shields.io/pypi/v/STouchTool.svg
     :target: https://pypi.org/project/STouchTool/
     :alt: Latest Version
