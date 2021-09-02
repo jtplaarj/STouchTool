@@ -1,0 +1,4 @@
+*.pdf
+test*
+tmp*
+evalboard_in_out.*
