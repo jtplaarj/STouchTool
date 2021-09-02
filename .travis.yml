@@ -18,7 +18,6 @@ jobs:
       env: DISTRIB="ubuntu" TOX_PYTHON_VERSION="py38" COVERAGE="false"
     - python: 3.9
       env: DISTRIB="ubuntu" TOX_PYTHON_VERSION="py39" COVERAGE="true"
-    - env: DISTRIB="conda" PYTHON_VERSION="3.8" COVERAGE="false"
 install:
   - source tests/travis_install.sh
 before_script:
