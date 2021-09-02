@@ -15,7 +15,8 @@ from typing import List, Tuple
 import matplotlib.pyplot as plt
 import skrf as rf
 from matplotlib import ticker
-from rftools import __version__
+
+from stouchtool import __version__
 
 __author__ = "Jesús Lázaro"
 __copyright__ = "Jesús Lázaro"
@@ -27,7 +28,7 @@ _logger = logging.getLogger(__name__)
 # ---- Python API ----
 # The functions defined in this section can be imported by users in their
 # Python scripts/interactive interpreter, e.g. via
-# `from rftools.skeleton import fib`,
+# `from STouchTool.skeleton import fib`,
 # when using this Python module as a library.
 
 
@@ -111,7 +112,7 @@ def parse_args(args: List[str]) -> argparse.Namespace:
     parser.add_argument(
         "--version",
         action="version",
-        version="RFTools {ver}".format(ver=__version__),
+        version="STouchTool {ver}".format(ver=__version__),
     )
     parser.add_argument(
         dest="input",
@@ -201,6 +202,6 @@ if __name__ == "__main__":
     # After installing your project with pip, users can also run your Python
     # modules as scripts via the ``-m`` flag, as defined in PEP 338::
     #
-    #     python -m rftools.skeleton 42
+    #     python -m STouchTool.skeleton 42
     #
     run()
