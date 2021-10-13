@@ -43,16 +43,15 @@ def s_cat(inputfiles: List[str], outputfile: str, NumPort: int) -> str:
             if comb(NumPort, 2) == NumFiles:
                 NumPortFound = True
                 break
-    else:
-        if comb(NumPort, 2) == NumFiles:
-            NumPortFound = True
+    elif comb(NumPort, 2) == NumFiles:
+        NumPortFound = True
 
     if not NumPortFound:
         _logger.debug("Wrong number of files: {}".format(NumFiles))
         raise ValueError("Wrong number of files: {}".format(NumFiles))
 
-    PortList = list()
-    RFNetworks = list()
+    PortList = []
+    RFNetworks = []
     for OutputPort in range(1, NumPort + 1):
         for InputPort in range(OutputPort + 1, NumPort + 1):
             PortList.append("p" + str(OutputPort) + str(InputPort))
